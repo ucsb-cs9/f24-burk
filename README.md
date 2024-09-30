@@ -10,9 +10,9 @@ assignment, do that on [Gradescope][gradescope].
 
 ## Places & Times
 
-- **Lectures**  17:00 to 18:15 on Tuesdays and Thursdays in 1920 Buchanan Hall
-- **"Labs"**  14:00 to 17:00 (one hour each) on Wednesdays in 1508 Phelps Hall
-- **Office Hours**  See [Piazza][class-links] for the latest schedule.
+- **Lectures:**  17:00 to 18:15 on Tuesdays and Thursdays in 1920 Buchanan Hall
+- **Labs:**  14:00 to 17:00 (one hour each) on Wednesdays in 1508 Phelps Hall
+- **Office Hours:**  See [Piazza][class-links] for the latest schedule.
 
 
 ## Assignments
@@ -33,6 +33,8 @@ _17:00 to 18:15 on Tuesdays and Thursdays in 1920 Buchanan Hall_
 | Date           | Topics
 |----------------|--------
 | September 26th | Class intro; the syllabus
+| October    1st | Basic Python in 60 minutes
+| October    3rd | Object-oriented design
 
 
 [piazza]: https://piazza.com/ucsb/fall2024/181c9/home
