@@ -1,0 +1,293 @@
+[17:07:50 holt@Metis cs9]$ python3 
+Python 3.7.1+ (heads/3.7:b264c60, Dec 10 2018, 09:07:12) 
+[Clang 10.0.0 (clang-1000.11.45.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # comment
+... 
+>>> 1
+1
+>>> 2
+2
+>>> 3
+3
+>>> 1.2
+1.2
+>>> 1.0
+1.0
+>>> 1 + 2
+3
+>>> 2 - 4
+-2
+>>> 4 * 7
+28
+>>> 9 / 3
+3.0
+>>> 9 /2
+4.5
+>>> 3/2
+1.5
+>>> 9 // 2
+4
+>>> 9//2
+4
+>>> 9 / / 2
+  File "<stdin>", line 1
+    9 / / 2
+        ^
+SyntaxError: invalid syntax
+>>> 9.0 // 2.0
+4.0
+>>> 9 % 2
+1
+>>> 9 * (9 // 2) + 9 % 2
+37
+>>> 2 * (9 // 2) + 9 % 2
+9
+>>> 7.0 % 3.0
+1.0
+>>> True
+True
+>>> False
+False
+>>> True and True
+True
+>>> True && True
+  File "<stdin>", line 1
+    True && True
+          ^
+SyntaxError: invalid syntax
+>>> True & True
+True
+>>> True & False
+False
+>>> True or False
+True
+>>> False or False
+False
+>>> True xor False
+  File "<stdin>", line 1
+    True xor False
+           ^
+SyntaxError: invalid syntax
+>>> True ^ True
+False
+>>> Teue ^ False
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Teue' is not defined
+>>> True ^ False
+True
+>>> 2 ** 3
+8
+>>> 9 ** 0.5
+3.0
+>>> None
+>>> "hello"
+'hello'
+>>> 'hello'
+'hello'
+>>> 'h'
+'h'
+>>> "h"
+'h'
+>>> "hello"[0]
+'h'
+>>> "hello"[1]
+'e'
+>>> "hello"[123456]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> "hello" + " " + "world"
+'hello world'
+>>> "hi" * 8
+'hihihihihihihihi'
+>>> "hello".index('l')
+2
+>>> "hello".index('x')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> "heelo".find("x")
+-1
+>>> "hello"[-1]
+'o'
+>>> "hello".find('l)
+  File "<stdin>", line 1
+    "hello".find('l)
+                   ^
+SyntaxError: EOL while scanning string literal
+>>> "ghello".find('l')
+3
+>>> "gheelo".find('l', 4)
+4
+>>> "ghello".find('l', 4)
+4
+>>> "ghello".find('l', 5)
+-1
+>>> 
+>>> "abcdef"[-1]
+'f'
+>>> "abcdef"[-2]
+'e'
+>>> "fg"[-7236487236]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> b"sagfdjashdkajhdskjdhaskj"
+b'sagfdjashdkajhdskjdhaskj'
+>>> b"hello\x45world"
+b'helloEworld'
+>>> "new\nline"
+'new\nline'
+>>> print("new\nline")
+new
+line
+>>> print("newline")
+newline
+>>> 
+>>> 
+>>> x = 42
+>>> x
+42
+>>> x = 3
+>>> x
+3
+>>> x = "hello"
+>>> x
+'hello'
+>>> x = True
+>>> x
+True
+>>> x = None
+>>> x
+>>> 
+>>> a = 1
+>>> b = 2
+>>> c = 3
+>>> d = 4
+>>> a = a + 1
+>>> b = b + 1
+>>> a
+2
+>>> b
+3
+>>> c += 1
+>>> c
+4
+>>> d += 1
+>>> d
+5
+>>> vars = [1, 2, 3, 4, 5]
+>>> ages = [12, 40, 31, 57, 4]
+>>> ages
+[12, 40, 31, 57, 4]
+>>> vars[0]
+1
+>>> args[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'args' is not defined
+>>> ages[0]
+12
+>>> ages[-1]
+4
+>>> ages[2]
+31
+>>> ages[1] = 42
+>>> ages
+[12, 42, 31, 57, 4]
+>>> "cat"[1] = "u"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> 
+>>> ages
+[12, 42, 31, 57, 4]
+>>> ages.pop()
+4
+>>> ages
+[12, 42, 31, 57]
+>>> ages.append(4)
+>>> ages
+[12, 42, 31, 57, 4]
+>>> ages.pop(2)
+31
+>>> ages
+[12, 42, 57, 4]
+>>> ages[-1]
+4
+>>> ages.prepend(11)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'prepend'
+>>> ages.unshift(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'unshift'
+>>> ages.shift(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'shift'
+>>> ages = [11] + ages
+>>> ages
+[11, 12, 42, 57, 4]
+>>> ages[2] = None
+>>> ages
+[11, 12, None, 57, 4]
+>>> {'Alice': 12, 'Bob': 43}
+{'Alice': 12, 'Bob': 43}
+>>> mymap = _
+>>> mymap
+{'Alice': 12, 'Bob': 43}
+>>> mymap[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> mymap['Alice']
+12
+>>> mymap['Bob']
+43
+>>> mymap['Dave']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'Dave'
+>>> mymap.get('Dave') 
+>>> print(_)
+43
+>>> print(mymap.get('Dave'))
+None
+>>> mymap.get('Dave', 100)
+100
+>>> mymap['Carol'] = 32
+>>> mymap
+{'Alice': 12, 'Bob': 43, 'Carol': 32}
+>>> 
+>>> mymap[12]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 12
+>>> mymap['Dave'] = [27, 'Brown Hair']
+>>> mymap
+{'Alice': 12, 'Bob': 43, 'Carol': 32, 'Dave': [27, 'Brown Hair']}
+>>> mymap.insert('Ed', 67)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'insert'
+>>> 
+>>> 
+>>> len("hello")
+5
+>>> len([])
+0
+>>> len(mymap)
+4
+>>> mymap['Alice'] = 90
+>>> mymap
+{'Alice': 90, 'Bob': 43, 'Carol': 32, 'Dave': [27, 'Brown Hair']}
+>>> mymap['Ed'] = 90
+>>> mymap
+{'Alice': 90, 'Bob': 43, 'Carol': 32, 'Dave': [27, 'Brown Hair'], 'Ed': 90}
+>>> len(mymap)
+5
+>>> ^D
