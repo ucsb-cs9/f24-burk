@@ -32,7 +32,7 @@ _17:00 to 18:15 on Tuesdays and Thursdays in 1920 Buchanan Hall_
 |----------------|--------
 | September 26th | Class intro; the syllabus
 | October    1st | Basic Python in 60 minutes
-| October    3rd | Object-oriented design
+| October    3rd | More loops and functions; classes
 
 
 [piazza]: https://piazza.com/ucsb/fall2024/181c9/home
