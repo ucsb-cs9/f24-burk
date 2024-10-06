@@ -77,4 +77,7 @@ you like before the deadline.
   to your program while testing; on Windows, use `Ctrl+Z` and then `Enter`.
 - On Gradescope, you'll only be able to see your program's output; you can't see
   the input like you can when running locally.
+- Make sure you only replace each character once.  If you're replacing `ab` with
+  `bc`,  your program should turn `cat` into `cbt`;  it should _not_ replace the
+  new `b` with a `c` and print `cct`.
 - Your output must match the expected output _exactly_. Case and spacing matter!
