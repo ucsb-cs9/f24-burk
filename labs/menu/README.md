@@ -61,9 +61,7 @@ the menu (in the order it was added), it prints:
 ## The Order
 
 The next step is to be able to represent what a user orders off of a menu.  Make
-a file called `order.py`, and in this file, write the following classes.  You'll
-want to `import menu` at the top of this file so you can access the menu classes
-you wrote in the first step.
+a file called `order.py`, and in this file, write the following classes.
 
 The `OrderItem` class is  similar to the `MenuItem` class.  It's a simple helper
 class for  storing information about  part of an order.  It has  two attributes:
@@ -107,7 +105,9 @@ For each order item in the order, it prints:
 ## The Program
 
 Now that you have your menu and order types,  you can use them to make a program
-that lets people order off a menu.  Write it in a file called `main.py`.
+that lets people order off a menu.  Write it in a file called `main.py`.  You'll
+want to import the `Menu` and `Order` classes that you wrote earlier;  that code
+will be doing most of the work.  See the Notes section for more on importing.
 
 Your program should take exactly one command line argument. This argument is the
 path to a TSV file (the format is described below).  When the program starts, it
@@ -207,16 +207,58 @@ command line argument, you can assume that the file exists and is in the correct
 format.
 
 
+## Notes
+
+You can get access to Python code from other files  with the `import` statement,
+just like you can  get access to standard Python libraries  like `os` and `sys`.
+Suppose  you have two Python files:  `pets.py` and `main.py`.  In `main.py`, you
+want to use the `Cat` and `Dog` classes from `pets.py`.  If the two files are in
+the same directory,  you can do this by adding an import statement to the top of
+`main.py`:
+
+```py
+import pets
+
+cat = pets.Cat('Mungojerrie')
+dog = pets.Dog('Shadow')
+```
+
+You can use a slightly different syntax  to import the classes directly, so that
+you don't have to refer to them via the `pets` module:
+
+```py
+from pets import Cat, Dog
+
+cat = Cat('Rumpleteazer')
+dog = Dog('Chance')
+```
+
+You may have also seen Python examples that contain this block of code:
+
+```py
+if __name__ == '__main__':
+    # some code here
+```
+
+Code inside this block only runs when the file it's in is run directly  (usually
+by running `python3 thefile.py`  in the terminal).  It doesn't run when the file
+is `import`ed by some other Python file.  You can take advantage of this and put
+test code in this block  in `menu.py` and `order.py`;  it won't run when they're
+imported by `main.py`, so there won't be any extraneous output,  and you can run
+your tests by running the files directly.
+
+
 ## Hints
 
-- Functions that don't have a return value specified should return `None`.
+- Functions that don't have a return value specified can return `None`.
 - Prices should always print with exactly two decimal places.
 - Names and numbers will always fit in the number of characters specified.
 - See the global  `format()` function  and the `str`  member functions `ljust()`
   and `rjust()` for help with formatting your output.
 - For even more formatting options, see <https://docs.python.org/3/tutorial/inputoutput.html>.
-- For reference, the layouts of the menu and order lines:
+- The layouts of the menu and order lines, with column numbers for reference:
   ```
+  123456789012345678901234567890123456789012345678901
     nnnnnnnnnnnnnnnnnnnnnnnn  pppppppp
     nnnnnnnnnnnnnnnnnnnnnnnn  qqq  pppppppp  tttttttt
   ```

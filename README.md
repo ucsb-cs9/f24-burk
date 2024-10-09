@@ -22,7 +22,7 @@ _Assignments are due before midnight Pacific Time._
 | Name                      | Due
 |---------------------------|-----
 | [Welcome](labs/welcome)   | October  7th
-| [Menu](labs/menu)         | October 12th
+| [Menu](labs/menu)         | October 14th
 
 
 ## Lectures
