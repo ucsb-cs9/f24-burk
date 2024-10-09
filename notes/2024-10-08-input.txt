@@ -1,0 +1,6 @@
+apples
+bananas
+cherries
+durians
+elderberries
+figs
