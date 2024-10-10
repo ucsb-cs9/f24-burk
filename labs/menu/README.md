@@ -77,9 +77,11 @@ functions that handle common `Order` operations:
   new `OrderItem`  to the end of the order.  If the order does contain that menu
   item,  it adjusts the  existing quantity.  If `quantity`  isn't specified,  it
   defaults to one.
-- `total_price()` takes no arguments, and returns the total price of the order.
+- `total_price()`  takes no arguments,  and returns the total price of the order
+  as a `float`.
 - `total_quantity()` takes no arguments, and returns the number of menu items in
-  the order (an order item with a quantity of two counts as two menu items).
+  the order as an `int`  (an order item with a quantity of three counts as three
+  menu items).
 - `print()` takes no arguments, and prints the order as shown below.
 
 ```
