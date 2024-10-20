@@ -94,6 +94,8 @@ that for this lab.  We'll talk about that later.
 ## Hints
 
 - Recursion works very nicely on linked lists.
+- The member function named `head()` will "claim" the name `head`. You can't use
+  the same name for a member variable; you'll have to call that something else.
 - An empty list should print as empty square brackets: `[]`.
 - Work on the `add()` `print()` (forward), and `head()` functions first.  You'll
   need `add()` and `print()` to test your code locally,  and the autograder will
