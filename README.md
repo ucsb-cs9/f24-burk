@@ -19,11 +19,12 @@ assignment, do that on [Gradescope][gradescope].
 
 _Assignments are due before midnight Pacific Time._
 
-| Name                      | Due
-|---------------------------|-----
-| [Welcome](labs/welcome)   | October  7th
-| [Menu](labs/menu)         | October 14th
-| [List](labs/list)         | October 21st
+| Name                        | Due
+|-----------------------------|-----
+| [Welcome](labs/welcome)     | October  7th
+| [Menu](labs/menu)           | October 14th
+| [List](labs/list)           | October 21st
+| [Calculate](labs/calculate) | October 28th
 
 
 ## Lectures
