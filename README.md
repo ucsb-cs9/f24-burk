@@ -40,7 +40,8 @@ _17:00 to 18:15 on Tuesdays and Thursdays in 1920 Buchanan Hall_
 | October   10th | Encapsulation and private members; variable storage
 | October   15th | Interface vs implementation; linked lists
 | October   17th | Linked list runtimes; big-O notation
-| October   22nd | Stacks and queues; vectors (dynamic arrays)
+| October   22nd | Stacks and queues; more big-O notation
+| October   24th | Vectors (dynamic arrays)
 
 
 [piazza]: https://piazza.com/ucsb/fall2024/181c9/home

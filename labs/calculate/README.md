@@ -212,6 +212,9 @@ you can `raise` a new exception from an `except` block.
 
 - The functions  listed above  are the only required functions,  but it might be
   helpful to define a few additional helper functions.
+- There are some built-in functions that can help a lot with tokenization. Check
+  out the `str` member function `split()`!  Or if you know what regexes are, you
+  could `findall()` or `finditer()` on groups of non-whitespace characters.
 - The `float()` constructor accepts more formats than the (rather strict) number
   format described above.  You can accept these or not; they won't be tested.
 - When evaluating binary (two-operand) operators in postfix notation,  the first
