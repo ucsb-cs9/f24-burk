@@ -21,10 +21,11 @@ _Assignments are due before midnight Pacific Time._
 
 | Name                        | Due
 |-----------------------------|-----
-| [Welcome](labs/welcome)     | October  7th
-| [Menu](labs/menu)           | October 14th
-| [List](labs/list)           | October 21st
-| [Calculate](labs/calculate) | October 28th
+| [Welcome](labs/welcome)     | October   7th
+| [Menu](labs/menu)           | October  14th
+| [List](labs/list)           | October  21st
+| [Calculate](labs/calculate) | October  28th
+| [Text](labs/text)           | November 11th
 
 
 ## Lectures
@@ -44,6 +45,7 @@ _17:00 to 18:15 on Tuesdays and Thursdays in 1920 Buchanan Hall_
 | October   24th | Vectors (dynamic arrays)
 | October   29th | Binary search; average and amortized runtimes
 | October   31st | _Midterm! Bring your student ID and a pen/pencil._
+| November   5th | Midterm debrief; sorting; selection sort; merge sort
 
 
 [piazza]: https://piazza.com/ucsb/fall2024/181c9/home
