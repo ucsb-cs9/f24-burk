@@ -49,7 +49,7 @@ The `Text` class should implement the following regular member functions.
   it removes and returns  the character at that index; otherwise, it removes and
   returns the last character in the text.
 
-It'll also need some helper functions so the autograder can validate your list
+You'll also need some helper functions  so the autograder can validate your list
 structure:
 
 - `head()` returns the first node in the list, or `None`.
@@ -97,11 +97,12 @@ add two member functions: `__add__()` and `__iadd__()`. The `__add__()` function
 implements the `+` operator,  and the `__iadd__()` function  implements the `+=`
 operator.  Both functions take one argument,  a `str` or a `Text`,  and add that
 text to the current text.  The difference is that `__add__()` creates a new text
-to hold the result, while `__iadd__()` modifies the current text in place.
+to hold the result,  while `__iadd__()`  modifies the text in place  and returns
+`self`.
 
 ### Substring
 
-The standard way to see if a string contains a substring is to use `in`.  To
+The  standard way  to see if a string contains  a substring is  to use `in`.  To
 support this, add a member function named `__contains__()`. This function should
 take one argument: a `str` or a `Text`, and return a `bool` indicating whether
 the argument is a substring of the current text.
@@ -109,14 +110,17 @@ the argument is a substring of the current text.
 ### Iteration
 
 To work with a Python `for` loop,  a class needs to have a member function named
-`__iter__()`.  This function  should return an instance of  an "iterator" class,
-which must have a member function named `__next__()`.
+`__iter__()`.  This function  should return an instance of  an "iterator" class.
+An iterator is a helper class that  "points" to  an item in a sequence,  and the
+iterator returned by  `Text.__iter__()`  should point to  the first character in
+the text.
 
-An iterator is a helper class that "points" to an item in a sequence. Initially,
-it points at the first item.  Calling `__next__()` returns the item the iterator
-is currently pointing at,  and updates the iterator to point to the next item in
-the sequence.  If there are no more items, it throws a special type of exception
-called `StopIteration`.
+In Python, iterators are expected to support two member functions:
+
+- `__next__()` returns the item the iterator is pointing at, and updates the
+  iterator to point to the next item in the sequence.  If there are no more
+  items, it throws a special type of exception called `StopIteration`.
+- `__iter__()` simply returns `self`.
 
 As a concrete example, this `for` loop:
 
@@ -135,6 +139,16 @@ try:
         do_stuff_with(thing)
 except StopIteration:
     pass
+```
+
+Note that this doesn't use the iterator's `__iter__()` function. That isn't used
+in `for` loops, but it is used by some functions that expect an "iterable" as an
+argument, like `join()`.  For example, this will raise a `TypeError` unless the
+iterator class has an `__iter__()` function:
+
+```py
+meat  = Text('meat')
+kebab = '-'.join(meat) # m-e-a-t
 ```
 
 ### Slicing
@@ -177,13 +191,14 @@ order.  For example:
 
 Like with `list`s, indices can be negative,  with index `-1` being the last item
 in the sequence, `-2` being the second-to-last, and so on. If an index is out of
-bounds, raise an `IndexError`.
+bounds, raise an `IndexError`. You should also raise an `IndexError` when trying
+to `pop()`  from an empty text  (you can think of  `pop()`  as having  a default
+argument of `-1`).
 
 Most of these functions only accept arguments  of certain types.  If you receive
-an argument of the wrong type, raise a `TypeError`.
-
-If you receive  an argument  of the correct type  but that is  otherwise invalid
-(like a string of the wrong length), raise a `ValueError`.
+an argument of the wrong type, raise a `TypeError`.  If you receive  an argument
+of the correct type  but that is  otherwise invalid  (like a string of the wrong
+length), raise a `ValueError`.
 
 
 ## Notes
@@ -192,6 +207,8 @@ If you receive  an argument  of the correct type  but that is  otherwise invalid
   See how much you can reuse!
 - On a similar note, look for common tasks that you can pull out into helper
   functions.
+- You'll need the `head()`,  `tail()`,  and `__len__()` functions before you can
+  get any meaningful results out of the autograder.
 - When raising exceptions, the error messages can be anything you find helpful.
   The autograder will only look at the exception type.
 - If you're not sure what a slice should do, try it with a `str`.
