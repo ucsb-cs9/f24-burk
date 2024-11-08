@@ -49,8 +49,8 @@ The `Text` class should implement the following regular member functions.
   it removes and returns  the character at that index; otherwise, it removes and
   returns the last character in the text.
 
-You'll also need some helper functions  so the autograder can validate your list
-structure:
+You'll also need some extra member functions so the autograder can validate your
+list structure:
 
 - `head()` returns the first node in the list, or `None`.
 - `tail()` returns the last node in the list, or `None`.
@@ -143,7 +143,7 @@ except StopIteration:
 
 Note that this doesn't use the iterator's `__iter__()` function. That isn't used
 in `for` loops, but it is used by some functions that expect an "iterable" as an
-argument, like `join()`.  For example, this will raise a `TypeError` unless the
+argument, like `join()`.  For example,  this will raise a `TypeError` unless the
 iterator class has an `__iter__()` function:
 
 ```py
