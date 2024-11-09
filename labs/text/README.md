@@ -209,6 +209,9 @@ length), raise a `ValueError`.
   functions.
 - You'll need the `head()`,  `tail()`,  and `__len__()` functions before you can
   get any meaningful results out of the autograder.
+- You can always add letters  to the end of the text,  so `len(text)` is a valid
+  index  for the `insert()` function,  even though it's invalid  for `pop()` and
+  `__getitem__()`.
 - When raising exceptions, the error messages can be anything you find helpful.
   The autograder will only look at the exception type.
 - If you're not sure what a slice should do, try it with a `str`.
