@@ -44,13 +44,15 @@ The `Text` class should implement the following regular member functions.
 - `extend()`　takes one argument, which must be a `str` or a `Text`. It adds all
   the characters in the argument to the end of the current text.
 - `insert()` takes two arguments:  an `int` index and a `str` of length one.  It
-  inserts the character at the given index.
+  inserts the character at the given index.  Unlike other functions that take an
+  index,  `insert()` accepts the length of the text as an index;  this will make
+  it insert the character at the very end of the text.
 - `pop()` takes an optional argument: an `int` index.  If an index is specified,
   it removes and returns  the character at that index; otherwise, it removes and
   returns the last character in the text.
 
 You'll also need some extra member functions so the autograder can validate your
-list structure:
+list structure.  Note that these return list nodes, not characters:
 
 - `head()` returns the first node in the list, or `None`.
 - `tail()` returns the last node in the list, or `None`.
@@ -196,9 +198,9 @@ to `pop()`  from an empty text  (you can think of  `pop()`  as having  a default
 argument of `-1`).
 
 Most of these functions only accept arguments  of certain types.  If you receive
-an argument of the wrong type, raise a `TypeError`.  If you receive  an argument
-of the correct type  but that is  otherwise invalid  (like a string of the wrong
-length), raise a `ValueError`.
+an argument of the wrong type, raise a `TypeError`.  If the user passes a string
+of the wrong length  to a function that expects a string of length one,  raise a
+`ValueError`.
 
 
 ## Notes
@@ -209,9 +211,8 @@ length), raise a `ValueError`.
   functions.
 - You'll need the `head()`,  `tail()`,  and `__len__()` functions before you can
   get any meaningful results out of the autograder.
-- You can always add letters  to the end of the text,  so `len(text)` is a valid
-  index  for the `insert()` function,  even though it's invalid  for `pop()` and
-  `__getitem__()`.
+- `len(text)` is a valid index for the `insert()` function, but not for `pop()`,
+  `__getitem__()`, or `__setitem__()`.
 - When raising exceptions, the error messages can be anything you find helpful.
   The autograder will only look at the exception type.
 - If you're not sure what a slice should do, try it with a `str`.
