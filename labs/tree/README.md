@@ -87,4 +87,6 @@ More formally:
 - The autograder will use `insert()` to build trees,  then `print()` them to see
   how they look.  If you  haven't implemented  `insert()` or  tree notation, you
   won't get useful test results.
-<!-- - There's a tree notation visualizer available online at <...> -->
+- I've added a tree notation visualizer to the class repo.  It's an HTML file in
+  the `docs` folder.  You can run it locally, or you can access it online at:\
+  <https://ucsb-cs9.github.io/f24-burk/tree-viewer.html>
