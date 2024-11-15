@@ -49,6 +49,7 @@ _17:00 to 18:15 on Tuesdays and Thursdays in 1920 Buchanan Hall_
 | November   5th | Midterm debrief; sorting; almost-selection sort; merge sort
 | November   7th | More sorting; selection sort; merge sort; quicksort
 | November  12th | Trees; binary search trees
+| November  14th | Sets and maps; abstract syntax trees; tree traversal
 
 
 [piazza]: https://piazza.com/ucsb/fall2024/181c9/home
