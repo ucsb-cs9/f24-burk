@@ -27,6 +27,7 @@ _Assignments are due before midnight Pacific Time._
 | [Calculate](labs/calculate) | October  28th
 | [Text](labs/text)           | November 11th
 | [Tree](labs/tree)           | November 18th
+| [Morse](labs/morse)         | November 25th
 
 
 ## Lectures
@@ -50,6 +51,10 @@ _17:00 to 18:15 on Tuesdays and Thursdays in 1920 Buchanan Hall_
 | November   7th | More sorting; selection sort; merge sort; quicksort
 | November  12th | Trees; binary search trees
 | November  14th | Sets and maps; abstract syntax trees; tree traversal
+| November  19th | Self-balancing trees; AVL trees; splay trees
+| November  21st | Heaps and priority queues; binary heaps
+| November  26th | _No lecture._
+| November  28th | _No lecture.  Happy Thanksgiving!_
 
 
 [piazza]: https://piazza.com/ucsb/fall2024/181c9/home
