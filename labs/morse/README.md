@@ -110,4 +110,13 @@ Ignore any leading or trailing whitespace in the input lines. Your output should
 never contain leading or trailing spaces.
 
 
+## Hints
+
+- You can find some sample tree files in this directory:
+  - `morse.txt` contains the International Morse Code tree as shown above.
+  - `hex.txt` contains the binary encodings of the sixteen hexadecimal digits.
+- The tree viewer from the Tree lab can help you visualize tree files:\
+  <https://ucsb-cs24.github.io/s24/tree-viewer.html>
+
+
 [morse]: <https://en.wikipedia.org/wiki/Morse_code>

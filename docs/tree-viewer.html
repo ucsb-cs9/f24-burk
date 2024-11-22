@@ -84,8 +84,15 @@
           let paren = this.text.indexOf(')', this.index)
           let next  = Math.min(space, paren)
 
-          if(space === -1) next = paren
-          if(paren === -1) next = space
+          if(space === paren) {
+            next = this.text.length
+          }
+          else if(space === -1) {
+            next = paren
+          }
+          else if(paren === -1) {
+            next = space
+          }
 
           if(next !== -1) {
             let text = this.text.slice(this.index, next)
