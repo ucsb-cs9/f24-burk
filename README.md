@@ -28,6 +28,7 @@ _Assignments are due before midnight Pacific Time._
 | [Text](labs/text)           | November 11th
 | [Tree](labs/tree)           | November 18th
 | [Morse](labs/morse)         | November 25th
+| [Skew](labs/skew)           | December  9th
 
 
 ## Lectures
