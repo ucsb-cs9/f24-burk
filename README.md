@@ -57,6 +57,7 @@ _17:00 to 18:15 on Tuesdays and Thursdays in 1920 Buchanan Hall_
 | November  26th | _No lecture._
 | November  28th | _No lecture.  Happy Thanksgiving!_
 | December   3rd | More binary heaps; build heap; leftist heaps
+| December   5th | Hash tables
 
 
 [piazza]: https://piazza.com/ucsb/fall2024/181c9/home
